@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-moz-range-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+::-moz-range-thumb,
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  display: none;
+}
+video::-ms-media-controls {
+  display: none !important;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.container {
+  padding: 0 6rem;
+  @media screen and (max-width: 900px) {
+    padding: 0 1rem;
+  }
+}
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #f32170, #9e36ce, #cf23cf);
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  -webkit-background-clip: text;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.hisButton{
+  margin: 25px 6rem !important;
+}
+// import styling
+@import "./navbar";
+// home
+@import "./home/homeOne";
+@import "./home/homeWhy";
+@import "./home/homehow";
+@import "./footer";
+
+// login
+@import "./login";
+
+// service page
+@import "./service/service"

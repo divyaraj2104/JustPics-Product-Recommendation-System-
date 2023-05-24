@@ -1,0 +1,41 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &::before {
+    background: #c13cff;
+    // background: #ed2276;
+    transform: rotate(2deg);
+    z-index: -1;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    height: 50vh;
+    width: 110%;
+    content: "";
+  }
+  .lognBox {
+    display: flex;
+    flex-direction: column;
+    background: #e1ebf5;
+    padding: 2rem;
+    width: 30vw;
+    border-radius: 7px;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 0;
+      padding-left: 1rem;
+    }
+    img {
+      width: 50px;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

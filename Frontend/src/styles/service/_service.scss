@@ -1,0 +1,123 @@
+.servicePage {
+  display: flex;
+  .searchh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: rgb(148 148 148);
+      margin-bottom: 2rem;
+    }
+    img {
+      width: 40%;
+      height: 60%;
+    }
+  }
+  .uploadImage {
+    flex: 0 0 40%;
+    background: black;
+    .imgContainer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: fixed;
+      width: 40%;
+      background: black;
+      .uploadIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: all 0.3s ease-in;
+        position: relative;
+        top: -40px;
+        z-index: -1;
+        &:hover {
+          background: rgb(23 22 22);
+        }
+        img {
+          height: 35px;
+          width: 35px;
+        }
+      }
+      .searchImg {
+        // height: 60%;
+        width: 50%;
+      }
+      input {
+        margin-top: 1rem;
+        cursor: pointer;
+        height: 25px;
+        opacity: 0;
+      }
+    }
+  }
+  .recSection {
+    .visualMatch {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+  }
+}
+.recommondation {
+  flex: 0 0 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+  .suggested {
+    height: auto;
+    width: 200px;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: #fcfcfc;
+    padding: 0.5rem;
+    border-radius: 8px;
+    .brand {
+      text-align: center;
+    }
+    .eComm {
+      text-align: center;
+      span {
+        text-decoration: line-through;
+      }
+    }
+
+    p {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .imageBox {
+      height: 60%;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

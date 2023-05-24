@@ -1,0 +1,114 @@
+footer {
+  background: black;
+  color: white;
+  padding-top: 2rem !important;
+  .footerMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media screen and (max-width: 800px) {
+      grid-template-columns: unset;
+      grid-template-rows: auto;
+    }
+    .footerBox {
+      margin: 1rem;
+      @media screen and (max-width: 1214px) {
+        padding: 2rem 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        img{
+            padding-right: 1rem;
+        }
+      }
+    }
+    .inTouch {
+      grid-column: 1/2;
+      line-height: 50px;
+      @media screen and (max-width: 800px) {
+        grid-row: 2/3;
+        grid-column: unset;
+        text-align: center;
+      }
+      .socialIcon {
+        display: flex;
+        height: 50px;
+        @media screen and (max-width: 800px) {
+          justify-content: center;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .logoDetails {
+      grid-column: 2/4;
+      text-align: center;
+      @media screen and (max-width: 800px) {
+        grid-row: 1/2;
+        grid-column: unset;
+      }
+      .logoName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        padding-top: 0;
+        h1 {
+          font-size: 3.25rem;
+        }
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+        }
+      }
+      p {
+        line-height: 30px;
+        width: 90%;
+        margin: auto;
+        padding-top: 1rem;
+        font-size: 18px;
+      }
+    }
+    .links {
+      grid-column: 4/5;
+      line-height: 50px;
+      position: relative;
+      right: -100px;
+      @media screen and (max-width: 900px) {
+        right: 0;
+      }
+      @media screen and (max-width: 800px) {
+        grid-row: 3/4;
+        grid-column: unset;
+      }
+      img {
+        width: 10px;
+        height: 15px;
+        margin-left: 0.3rem;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      @media screen and (max-width: 800px) {
+        justify-content: center;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .rights {
+    padding: 2rem;
+    text-align: center;
+  }
+}

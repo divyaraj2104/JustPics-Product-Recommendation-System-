@@ -1,0 +1,41 @@
+.homwhow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   margin-top: 6rem;
+  flex-direction: column;
+  height: 100vh;
+  .HowSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    .illustration {
+      flex: 0 0 50%;
+      img {
+        width: 100%;
+        padding-right: 5rem;
+      }
+    }
+    .introText {
+      flex: 0 0 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          padding: 0.5rem;
+          font-size: 1.3rem;
+        }
+      }
+      img {
+        height: 25px;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
