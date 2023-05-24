@@ -1,5 +1,6 @@
 # JustPics-Product-Recommendation-System-
 
+<h5>Most on-line shopping search engines are still largely depending on knowledge base and use key word matching as their search strategy to find the most likely product that consumers want to buy. This is inefficient in a way that the description of products can vary a lot from the seller’s side to the buyer’s side. we proposed an interactive product recommendation method, which considers not only the product diversity but also the visual similarity, to interactively capture a user's real intention and refine the product recommendation result based on the user's real product interests.</h5>
 
 
 ![login_page](https://github.com/divyaraj2104/JustPics-Product-Recommendation-System-/assets/73192231/512e015a-c9fb-4d49-9ab1-7dc2cee0010a)
